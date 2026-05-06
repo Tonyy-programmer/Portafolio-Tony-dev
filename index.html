@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anthony Paredes | TonyDev</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="bg-orb orb-1" aria-hidden="true"></div>
+    <div class="bg-orb orb-2" aria-hidden="true"></div>
+    <div class="bg-grid" aria-hidden="true"></div>
+
+    <header class="top-nav reveal">
+        <p class="brand"><span class="brand__mark">TonyDev</span> Anthony Paredes</p>
+        <div class="nav-actions">
+            <a href="#proyectos" class="nav-link" data-i18n="nav.projects">Proyectos</a>
+            <a href="#empire" class="nav-link" data-i18n="nav.game">Juego</a>
+            <a href="#objetivo" class="nav-link" data-i18n="nav.objective">Objetivo</a>
+            <a href="#contacto" class="nav-link" data-i18n="nav.contact">Contacto</a>
+            <div class="lang-switch" role="group" aria-label="Idioma">
+                <button id="langEs" class="lang-btn is-active" type="button">ES</button>
+                <button id="langEn" class="lang-btn" type="button">EN</button>
+            </div>
+            <button id="themeToggle" class="theme-toggle" type="button" aria-label="Cambiar tema" data-i18n="theme.dark">Tema oscuro</button>
+        </div>
+    </header>
+
+    <main class="layout">
+        <section class="hero reveal">
+            <div class="hero__left">
+                <p class="eyebrow" data-i18n="hero.eyebrow">TonyDev | Portafolio Junior</p>
+                <h1>
+                    Anthony Paredes
+                    <span data-i18n="hero.role">Desarrollador junior en formacion</span>
+                </h1>
+                <p class="hero__subtitle" data-i18n="hero.subtitle">
+                    Tengo 13 años y me enfoco en construir experiencias web orientadas al usuario. Mi base principal es Python (incluyendo POO) y actualmente estoy consolidando frontend para avanzar después hacia backend con Python. También estoy desarrollando Empire of Luck, un juego de Roblox inspirado en Grow a Garden, con imperios, bots de IA de ayuda, lógica de IA y aprendizaje constante de Luau y Lua.
+                </p>
+
+                <div class="hero__panel">
+                    <p data-i18n="hero.panel1">
+                        Me interesa desarrollar sistemas que aporten valor real, mejoren procesos y conviertan ideas en software funcional. Aprendo construyendo proyectos practicos y mejorando con feedback.
+                    </p>
+                    <p class="hero__highlight" data-i18n="hero.panel2">
+                        Tengo un interes muy fuerte en inteligencia artificial y quiero integrarla en sistemas utiles, asistentes y herramientas que mejoren la experiencia de usuario.
+                    </p>
+                </div>
+
+                <div class="hero__actions">
+                    <a class="btn btn--primary" href="#contacto" data-i18n="hero.contact">Contactar</a>
+                    <a class="btn btn--secondary" href="mailto:anthonyparedes283839gm@gmail.com" data-i18n="hero.email">Correo</a>
+                    <a class="btn btn--ghost" href="https://github.com/Tonyy-programmer" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
+
+                <p class="hero__meta" data-i18n="hero.meta">Remoto | Aprendiz autodidacta | Software util, UX, IA aplicada y Roblox</p>
+                <p class="hero__availability" data-i18n="hero.availability">Disponible para colaboraciones, proyectos de aprendizaje y retos de desarrollo web.</p>
+            </div>
+
+            <div class="hero__right">
+                <div class="profile-card">
+                    <div class="profile-card__photo-wrap">
+                        <img src="img/yo.png.jpeg" alt="Foto de Anthony Paredes" class="profile-card__photo">
+                    </div>
+                    <div class="profile-card__glow" aria-hidden="true"></div>
+                </div>
+
+                <div class="competencias">
+                    <h2 data-i18n="hero.skillsTitle">Competencias clave</h2>
+                    <div class="radar">
+                        <svg viewBox="0 0 220 220" aria-hidden="true">
+                            <g class="radar-grid">
+                                <polygon points="110,20 188,65 188,155 110,200 32,155 32,65"></polygon>
+                                <polygon points="110,40 171,75 171,145 110,180 49,145 49,75"></polygon>
+                                <polygon points="110,60 154,85 154,135 110,160 66,135 66,85"></polygon>
+                                <polygon points="110,80 137,95 137,125 110,140 83,125 83,95"></polygon>
+                                <polygon points="110,100 120,105 120,115 110,120 100,115 100,105"></polygon>
+                                <line x1="110" y1="20" x2="110" y2="200"></line>
+                                <line x1="32" y1="65" x2="188" y2="155"></line>
+                                <line x1="32" y1="155" x2="188" y2="65"></line>
+                            </g>
+                            <polygon class="radar-shape" points="110,42 162,82 150,132 110,156 72,138 68,88"></polygon>
+                        </svg>
+                        <ul class="radar-labels">
+                            <li class="label-top" data-i18n="radar.logic">Logica</li>
+                            <li class="label-tr">Frontend</li>
+                            <li class="label-br">UI/CSS</li>
+                            <li class="label-bottom">Python</li>
+                            <li class="label-bl">IA</li>
+                            <li class="label-tl" data-i18n="radar.projects">Proyectos</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="perfil reveal">
+            <h2 data-i18n="profile.title">Perfil profesional</h2>
+            <p class="perfil__texto" data-i18n="profile.text">
+                Soy un desarrollador junior en formacion con enfoque practico. Me interesa construir software util, comprender la logica de los sistemas y transformarla en experiencias claras para el usuario. Aprendo rapido, experimento con proyectos reales y mantengo un interes fuerte en IA aplicada.
+            </p>
+
+            <div class="traits">
+                <article class="trait trait--blue">
+                    <span class="trait__icon">U</span>
+                    <h3 data-i18n="trait.user.title">Enfoque en usuario</h3>
+                    <p data-i18n="trait.user.text">Busco crear sistemas que aporten valor y mejoren la experiencia final.</p>
+                </article>
+                <article class="trait trait--green">
+                    <span class="trait__icon">A</span>
+                    <h3 data-i18n="trait.self.title">Aprendizaje autodidacta</h3>
+                    <p data-i18n="trait.self.text">Aprendo rapido por cuenta propia y consolido conocimientos construyendo proyectos.</p>
+                </article>
+                <article class="trait trait--yellow">
+                    <span class="trait__icon">IA</span>
+                    <h3 data-i18n="trait.ai.title">Interes en IA</h3>
+                    <p data-i18n="trait.ai.text">Quiero integrar inteligencia artificial en herramientas y productos utiles.</p>
+                </article>
+                <article class="trait trait--red">
+                    <span class="trait__icon">S</span>
+                    <h3 data-i18n="trait.systems.title">Vision de sistemas</h3>
+                    <p data-i18n="trait.systems.text">Me gusta pensar en la logica completa: frontend, backend y funcionamiento real.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="objetivo reveal" id="objetivo">
+            <div class="section-title">
+                <h2 data-i18n="objective.title">Objetivo profesional</h2>
+                <p data-i18n="objective.subtitle">Resumen de enfoque, interes tecnico y ruta de crecimiento como desarrollador.</p>
+            </div>
+            <div class="objetivo-grid">
+                <article class="objetivo-card">
+                    <h3 data-i18n="objective.purpose.title">Proposito</h3>
+                    <p data-i18n="objective.purpose.text">Crear software y sistemas que mejoren la experiencia del usuario y resuelvan necesidades reales.</p>
+                </article>
+                <article class="objetivo-card">
+                    <h3 data-i18n="objective.ai.title">Interes en IA</h3>
+                    <p data-i18n="objective.ai.text">Me interesa demasiado la inteligencia artificial y su aplicacion practica en productos reales.</p>
+                </article>
+                <article class="objetivo-card">
+                    <h3 data-i18n="objective.path.title">Proyeccion</h3>
+                    <p data-i18n="objective.path.text">Fortalecer frontend, pasar a backend con Python y construir APIs y microservicios.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="skills-section reveal" id="habilidades">
+            <div class="section-title">
+                <h2 data-i18n="skills.title">Detalle de habilidades</h2>
+                <p data-i18n="skills.subtitle">Vista por areas para mostrar en que tecnologias me estoy fortaleciendo.</p>
+            </div>
+
+            <div class="skill-filters" role="tablist" aria-label="Filtro de habilidades">
+                <button class="chip is-active" type="button" data-filter="all" data-i18n="filter.all">Todas</button>
+                <button class="chip" type="button" data-filter="python">Python</button>
+                <button class="chip" type="button" data-filter="frontend">Frontend</button>
+                <button class="chip" type="button" data-filter="ui">UI/CSS</button>
+                <button class="chip" type="button" data-filter="herramientas" data-i18n="filter.tools">Herramientas</button>
+                <button class="chip" type="button" data-filter="ia">IA</button>
+                <button class="chip" type="button" data-filter="roblox">Roblox</button>
+            </div>
+
+            <div class="skills-grid" id="skillsGrid">
+                <article class="skill-card" data-category="python">
+                    <header><h3>Python</h3><span data-i18n="skill.baseStrong">Base fuerte</span></header>
+                    <p data-i18n="skill.python.text">Logica, funciones, estructuras, POO y resolucion de problemas.</p>
+                    <div class="meter"><div style="--w: 86%"></div></div>
+                </article>
+                <article class="skill-card" data-category="frontend">
+                    <header><h3>JavaScript</h3><span data-i18n="skill.js.level">En consolidacion</span></header>
+                    <p data-i18n="skill.js.text">DOM, eventos, localStorage, animaciones y logica de interaccion.</p>
+                    <div class="meter"><div style="--w: 72%"></div></div>
+                </article>
+                <article class="skill-card" data-category="frontend ui">
+                    <header><h3>HTML + CSS</h3><span data-i18n="skill.htmlcss.level">Buen nivel junior</span></header>
+                    <p data-i18n="skill.htmlcss.text">Estructura, responsive, componentes visuales y efectos.</p>
+                    <div class="meter"><div style="--w: 80%"></div></div>
+                </article>
+                <article class="skill-card" data-category="ui">
+                    <header><h3 data-i18n="skill.ui.title">Diseno UI</h3><span data-i18n="skill.ui.level">Creativo</span></header>
+                    <p data-i18n="skill.ui.text">Creacion de paginas con identidad visual y animaciones con intencion.</p>
+                    <div class="meter"><div style="--w: 68%"></div></div>
+                </article>
+                <article class="skill-card" data-category="herramientas">
+                    <header><h3>Git / GitHub</h3><span data-i18n="skill.git.level">Uso basico</span></header>
+                    <p data-i18n="skill.git.text">Control de versiones, repositorios y preparacion para publicar proyectos.</p>
+                    <div class="meter"><div style="--w: 58%"></div></div>
+                </article>
+                <article class="skill-card" data-category="herramientas python">
+                    <header><h3>Flask (base)</h3><span data-i18n="skill.flask.level">Backend inicial</span></header>
+                    <p data-i18n="skill.flask.text">API simple para chatbot y conexion frontend-backend.</p>
+                    <div class="meter"><div style="--w: 61%"></div></div>
+                </article>
+                <article class="skill-card" data-category="ia python">
+                    <header><h3 data-i18n="skill.ai.title">IA aplicada (prototipos)</h3><span data-i18n="skill.ai.level">Interes alto</span></header>
+                    <p data-i18n="skill.ai.text">Integracion de IA en chatbot para consultas y exploracion de casos de uso reales.</p>
+                    <div class="meter"><div style="--w: 64%"></div></div>
+                </article>
+                <article class="skill-card" data-category="roblox ia">
+                    <header><h3>Roblox + Luau/Lua</h3><span data-i18n="skill.roblox.level">En aprendizaje activo</span></header>
+                    <p data-i18n="skill.roblox.text">Creacion de juegos en Roblox Studio, sistemas de imperios, bots de ayuda con IA y logica de juego separada entre backend y frontend.</p>
+                    <div class="meter"><div style="--w: 60%"></div></div>
+                </article>
+            </div>
+        </section>
+
+        <section class="stack-section reveal" id="stack">
+            <div class="section-title">
+                <h2 data-i18n="stack.title">Stack favorito (TonyDev)</h2>
+                <p data-i18n="stack.subtitle">Tecnologias que mas me interesan para construir sistemas reales, con Python como prioridad.</p>
+            </div>
+            <div class="stack-grid">
+                <article class="stack-card stack-card--primary">
+                    <h3 data-i18n="stack.python.title">Python (prioridad principal)</h3>
+                    <p data-i18n="stack.python.text">Mi lenguaje base para logica, backend, APIs y futuras arquitecturas con microservicios.</p>
+                </article>
+                <article class="stack-card">
+                    <h3>Flask / FastAPI</h3>
+                    <p data-i18n="stack.backend.text">Ruta de backend que quiero fortalecer para crear servicios y APIs utiles.</p>
+                </article>
+                <article class="stack-card">
+                    <h3>HTML + CSS + JavaScript</h3>
+                    <p data-i18n="stack.front.text">Base actual para interfaces, experiencia de usuario y productos interactivos.</p>
+                </article>
+                <article class="stack-card">
+                    <h3 data-i18n="stack.aiCard.title">Inteligencia Artificial</h3>
+                    <p data-i18n="stack.aiCard.text">Interes fuerte en integrar IA en asistentes, automatizacion y herramientas practicas.</p>
+                </article>
+                <article class="stack-card">
+                    <h3 data-i18n="stack.roblox.title">Roblox Studio + Luau</h3>
+                    <p data-i18n="stack.roblox.text">Ruta actual para crear Empire of Luck con sistemas de juego, imperios, bots de IA y logica separada entre backend y frontend.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="game-promo reveal" id="empire">
+            <div class="game-promo__content">
+                <p class="eyebrow" data-i18n="empire.eyebrow">Juego Roblox en desarrollo</p>
+                <h2 data-i18n="empire.title">Empire of Luck</h2>
+                <p data-i18n="empire.text">
+                    Empire of Luck es mi juego de Roblox inspirado en Grow a Garden, pero llevado a una experiencia de imperios, progreso y suerte. El jugador construye su camino, mejora su imperio y recibe apoyo de bots de IA pensados para guiar, asistir y hacer que la experiencia se sienta mas viva.
+                </p>
+                <div class="game-promo__actions">
+                    <a class="btn btn--primary" href="https://www.roblox.com/es/games/102022295086471/Empire-of-Luck" target="_blank" rel="noopener noreferrer" data-i18n="empire.play">Jugar en Roblox</a>
+                    <a class="btn btn--secondary" href="#proyectos" data-i18n="empire.projectLink">Ver proyecto</a>
+                </div>
+            </div>
+            <div class="game-promo__features">
+                <article>
+                    <span>01</span>
+                    <h3 data-i18n="empire.feature1.title">Imperios y progreso</h3>
+                    <p data-i18n="empire.feature1.text">Una idea de juego basada en crecimiento, construccion y evolucion del jugador dentro de su propio imperio.</p>
+                </article>
+                <article>
+                    <span>02</span>
+                    <h3 data-i18n="empire.feature2.title">Bots con IA</h3>
+                    <p data-i18n="empire.feature2.text">Asistentes dentro del juego pensados para ayudar, orientar y mejorar la experiencia del jugador.</p>
+                </article>
+                <article>
+                    <span>03</span>
+                    <h3 data-i18n="empire.feature3.title">Luau y Lua</h3>
+                    <p data-i18n="empire.feature3.text">Proyecto actual para aprender Roblox Studio, Luau/Lua y logica de gameplay con sistemas mas organizados.</p>
+                </article>
+                <article>
+                    <span>04</span>
+                    <h3 data-i18n="empire.feature4.title">Backend y frontend</h3>
+                    <p data-i18n="empire.feature4.text">Estoy dividiendo el juego en partes para ordenar mejor la logica, la interfaz y los sistemas que hacen funcionar la experiencia.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="projects reveal" id="proyectos">
+            <div class="section-title">
+                <h2 data-i18n="projects.title">Proyectos</h2>
+                <p data-i18n="projects.subtitle">Proyectos que reflejan mi avance en logica, frontend, Roblox e integracion con IA.</p>
+            </div>
+
+            <div class="project-spotlight">
+                <div class="project-spotlight__header">
+                    <div>
+                        <p class="eyebrow" data-i18n="projects.featured">Proyecto destacado</p>
+                        <h3 data-i18n="proj.chat.title">Chatbot IA para boleteria</h3>
+                        <p class="project-subtitle" data-i18n="proj.chat.sub">Consultas sobre un sistema de boleteria con backend en Python.</p>
+                    </div>
+                    <div class="project-badge-group">
+                        <span class="project-badge">IA + Backend</span>
+                        <span class="project-status project-status--prototype" data-i18n="status.prototype">Prototipo</span>
+                    </div>
+                </div>
+
+                <p data-i18n="proj.chat.desc">
+                    Desarrolle un prototipo de chatbot que responde preguntas sobre un sistema de boleteria. Integre frontend, backend con Flask y consumo de IA para responder dudas del usuario. Este proyecto fue clave para comprender una arquitectura basica cliente-servidor y reforzo mi interes por la inteligencia artificial aplicada.
+                </p>
+
+                <div class="project-stack-grid">
+                    <article>
+                        <h4 data-i18n="proj.chat.backendTitle">Backend y logica</h4>
+                        <p data-i18n="proj.chat.backendText">Python, Flask, rutas, manejo de peticiones y respuestas JSON.</p>
+                    </article>
+                    <article>
+                        <h4 data-i18n="proj.chat.frontTitle">Frontend y UX</h4>
+                        <p data-i18n="proj.chat.frontText">HTML, CSS y JavaScript para interfaz de chat e interaccion.</p>
+                    </article>
+                </div>
+
+                <p class="project-learning"><strong data-i18n="project.learn.label">Aprendizaje clave:</strong> <span data-i18n="proj.chat.learn">Integracion frontend-backend con Flask y estructura inicial de un flujo de chat con IA.</span></p>
+                <p class="project-improve"><strong data-i18n="project.improve.label">Que mejoraria:</strong> <span data-i18n="proj.chat.improve">Manejo de errores, validaciones del backend y una interfaz de chat mas robusta.</span></p>
+            </div>
+
+            <div class="project-cards">
+                <article class="project-card">
+                    <img src="img/Desarrollador.png" alt="Vista de la pagina de propuesta interactiva">
+                    <div>
+                        <h3 data-i18n="proj.propuesta.title">Propuesta interactiva</h3>
+                        <div class="project-inline-meta">
+                            <span class="project-status project-status--done" data-i18n="status.done">Completado</span>
+                        </div>
+                        <p data-i18n="proj.propuesta.desc">Pagina con animaciones, musica, mini juego, corazones, confeti y flujo interactivo.</p>
+                        <ul>
+                            <li data-i18n="proj.propuesta.li1">Manipulacion del DOM</li>
+                            <li data-i18n="proj.propuesta.li2">Animaciones CSS + JS</li>
+                            <li>EmailJS + localStorage</li>
+                        </ul>
+                        <p class="project-learning"><strong data-i18n="project.learn.label">Aprendizaje clave:</strong> <span data-i18n="proj.propuesta.learn">Logica de interaccion en JavaScript, animaciones y manejo de estado en el navegador.</span></p>
+                        <p class="project-improve"><strong data-i18n="project.improve.label">Que mejoraria:</strong> <span data-i18n="proj.propuesta.improve">Separar mejor la logica en modulos y optimizar mas la experiencia movil.</span></p>
+                        <div class="project-links">
+                            <a class="project-link-btn" href="https://tonyy-programmer.github.io/Propuesta-Especial/" target="_blank" rel="noopener noreferrer" data-i18n="project.demo">Demo en vivo</a>
+                            <a class="project-link-btn" href="https://github.com/Tonyy-programmer/Propuesta-Especial" target="_blank" rel="noopener noreferrer" data-i18n="project.repo">Ver repositorio</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <img src="img/yo2.png.jpeg" alt="Vista de la pagina personal">
+                    <div>
+                        <h3 data-i18n="proj.portfolio.title">Portafolio personal</h3>
+                        <div class="project-inline-meta">
+                            <span class="project-status project-status--improving" data-i18n="status.improving">En mejora</span>
+                        </div>
+                        <p data-i18n="proj.portfolio.desc">Rediseño profesional de mi pagina de presentacion con secciones, filtros y animaciones.</p>
+                        <ul>
+                            <li data-i18n="proj.portfolio.li1">Diseño responsive</li>
+                            <li data-i18n="proj.portfolio.li2">Animaciones de entrada</li>
+                            <li data-i18n="proj.portfolio.li3">UI enfocada en presentacion profesional</li>
+                        </ul>
+                        <p class="project-learning"><strong data-i18n="project.learn.label">Aprendizaje clave:</strong> <span data-i18n="proj.portfolio.learn">Jerarquia visual, presentacion profesional y mejor organizacion del contenido tecnico.</span></p>
+                        <p class="project-improve"><strong data-i18n="project.improve.label">Que mejoraria:</strong> <span data-i18n="proj.portfolio.improve">Agregar demos en vivo por proyecto y enlaces especificos para cada repositorio.</span></p>
+                        <div class="project-links">
+                            <a class="project-link-btn" href="https://tonyy-programmer.github.io/Mi_primera_Pagina/" target="_blank" rel="noopener noreferrer" data-i18n="project.demo">Demo en vivo</a>
+                            <a class="project-link-btn" href="https://github.com/Tonyy-programmer/Mi_primera_Pagina" target="_blank" rel="noopener noreferrer" data-i18n="project.repo">Ver repositorio</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card project-card--wide">
+                    <img src="img/Desarrollador.png" alt="Vista conceptual del proyecto Empire of Luck">
+                    <div>
+                        <h3 data-i18n="proj.empire.title">Empire of Luck</h3>
+                        <div class="project-inline-meta">
+                            <span class="project-status project-status--prototype" data-i18n="status.inProgress">En desarrollo</span>
+                        </div>
+                        <p data-i18n="proj.empire.desc">Juego de Roblox inspirado en Grow a Garden, pero llevado a un sistema de imperios donde bots de IA ayudan al jugador. Estoy aprendiendo Luau y Lua mientras separo la logica del juego entre backend y frontend.</p>
+                        <ul>
+                            <li data-i18n="proj.empire.li1">Roblox Studio + Luau/Lua</li>
+                            <li data-i18n="proj.empire.li2">Bots de IA como apoyo al jugador</li>
+                            <li data-i18n="proj.empire.li3">Arquitectura separada entre backend y frontend</li>
+                        </ul>
+                        <p class="project-learning"><strong data-i18n="project.learn.label">Aprendizaje clave:</strong> <span data-i18n="proj.empire.learn">Organizar sistemas de juego, crear logica de IA y pensar el gameplay como una experiencia escalable.</span></p>
+                        <p class="project-improve"><strong data-i18n="project.improve.label">Que mejoraria:</strong> <span data-i18n="proj.empire.improve">Pulir mecanicas, balancear los imperios y terminar una version jugable en un plazo estimado de 2 a 3 meses.</span></p>
+                        <div class="project-links">
+                            <a class="project-link-btn" href="https://www.roblox.com/es/games/102022295086471/Empire-of-Luck" target="_blank" rel="noopener noreferrer" data-i18n="project.robloxDemo">Demo en Roblox</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="timeline reveal" id="timeline">
+            <div class="section-title">
+                <h2 data-i18n="timeline.title">Timeline de aprendizaje</h2>
+                <p data-i18n="timeline.subtitle">Resumen de como he ido avanzando en mi ruta tecnica.</p>
+            </div>
+            <div class="timeline-list">
+                <article class="timeline-item">
+                    <span class="timeline-dot"></span>
+                    <div>
+                        <p class="timeline-item__tag" data-i18n="timeline.step1.tag">Inicio</p>
+                        <h3 data-i18n="timeline.step1.title">Python y logica</h3>
+                        <p data-i18n="timeline.step1.text">Fortaleci bases de programacion, funciones, estructuras y POO.</p>
+                    </div>
+                </article>
+                <article class="timeline-item">
+                    <span class="timeline-dot"></span>
+                    <div>
+                        <p class="timeline-item__tag" data-i18n="timeline.step2.tag">Frontend</p>
+                        <h3 data-i18n="timeline.step2.title">HTML, CSS y JavaScript</h3>
+                        <p data-i18n="timeline.step2.text">Desarrolle interfaces, animaciones e interacciones con enfoque en usuario.</p>
+                    </div>
+                </article>
+                <article class="timeline-item">
+                    <span class="timeline-dot"></span>
+                    <div>
+                        <p class="timeline-item__tag" data-i18n="timeline.step3.tag">Integracion</p>
+                        <h3 data-i18n="timeline.step3.title">Proyecto con IA y backend</h3>
+                        <p data-i18n="timeline.step3.text">Integre Flask y un chatbot con IA para resolver preguntas de un sistema.</p>
+                    </div>
+                </article>
+                <article class="timeline-item">
+                    <span class="timeline-dot"></span>
+                    <div>
+                        <p class="timeline-item__tag" data-i18n="timeline.step4.tag">Siguiente etapa</p>
+                        <h3 data-i18n="timeline.step4.title">APIs y microservicios con Python</h3>
+                        <p data-i18n="timeline.step4.text">Objetivo de crecimiento para construir sistemas mas completos y escalables.</p>
+                    </div>
+                </article>
+                <article class="timeline-item">
+                    <span class="timeline-dot"></span>
+                    <div>
+                        <p class="timeline-item__tag" data-i18n="timeline.step5.tag">Proyecto actual</p>
+                        <h3 data-i18n="timeline.step5.title">Empire of Luck en Roblox</h3>
+                        <p data-i18n="timeline.step5.text">Estoy creando un juego de imperios con bots de IA, aprendiendo Luau/Lua y dividiendo la logica entre backend y frontend.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="roadmap-blocks reveal">
+            <div class="roadmap-grid">
+                <article class="roadmap-card">
+                    <h2 data-i18n="current.title">Proyecto actual</h2>
+                    <p class="roadmap-card__tag" data-i18n="current.tag">En progreso</p>
+                    <p data-i18n="current.text">
+                        Estoy enfocado en Empire of Luck, un juego de Roblox inspirado en Grow a Garden pero con imperios y bots de IA ayudando al jugador. Lo estoy construyendo con Luau/Lua, separando backend y frontend, y estimo tener una version lista en maximo 2 o 3 meses.
+                    </p>
+                </article>
+
+                <article class="roadmap-card">
+                    <h2 data-i18n="goals.title">Metas 2026</h2>
+                    <ul>
+                        <li data-i18n="goals.li1">Publicar mas proyectos en GitHub con documentacion clara.</li>
+                        <li data-i18n="goals.li2">Terminar Empire of Luck en Roblox en un plazo estimado de 2 a 3 meses.</li>
+                        <li data-i18n="goals.li3">Integrar bots de IA utiles dentro del gameplay y mejorar la estructura backend/frontend.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="workflow reveal">
+            <div class="section-title">
+                <h2 data-i18n="workflow.title">Como trabajo</h2>
+                <p data-i18n="workflow.subtitle">Proceso que sigo para construir proyectos y mejorar resultados.</p>
+            </div>
+            <div class="workflow-grid">
+                <article class="workflow-step">
+                    <span>01</span>
+                    <h3 data-i18n="workflow.step1.title">Entiendo el problema</h3>
+                    <p data-i18n="workflow.step1.text">Defino que necesita el usuario y que resultado debe obtener.</p>
+                </article>
+                <article class="workflow-step">
+                    <span>02</span>
+                    <h3 data-i18n="workflow.step2.title">Hago prototipo</h3>
+                    <p data-i18n="workflow.step2.text">Construyo una version funcional para validar idea e interaccion.</p>
+                </article>
+                <article class="workflow-step">
+                    <span>03</span>
+                    <h3 data-i18n="workflow.step3.title">Pruebo y ajusto</h3>
+                    <p data-i18n="workflow.step3.text">Reviso errores, mejoro detalles y simplifico la experiencia.</p>
+                </article>
+                <article class="workflow-step">
+                    <span>04</span>
+                    <h3 data-i18n="workflow.step4.title">Mejoro el producto</h3>
+                    <p data-i18n="workflow.step4.text">Anado funciones, organizo mejor el codigo y subo el nivel tecnico.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="aprendizaje reveal">
+            <div class="aprendizaje__card">
+                <h2 data-i18n="growth.title">Ruta de crecimiento</h2>
+                <p data-i18n="growth.text">
+                    Mi plan es seguir fortaleciendo frontend mientras avanzo a backend con Python para construir APIs y, posteriormente, microservicios pequenos. Mi enfoque principal es crear software util para usuarios e integrar IA en soluciones practicas.
+                </p>
+                <ol>
+                    <li data-i18n="growth.li1">Consolidar JavaScript y la estructura de proyectos frontend</li>
+                    <li data-i18n="growth.li2">Backend con Flask / FastAPI</li>
+                    <li data-i18n="growth.li3">Bases de datos y APIs REST</li>
+                    <li data-i18n="growth.li4">Integracion de IA en sistemas utiles</li>
+                    <li data-i18n="growth.li5">Primer microservicio en Python</li>
+                </ol>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer reveal" id="contacto">
+        <h2 data-i18n="footer.title">Disponible para colaborar en proyectos</h2>
+        <div class="footer__actions">
+            <a href="mailto:anthonyparedes283839gm@gmail.com" class="icon-btn" aria-label="Enviar correo" data-i18n="footer.emailBtn">Email</a>
+            <a href="https://github.com/Tonyy-programmer" target="_blank" rel="noopener noreferrer" class="icon-btn" aria-label="GitHub">GitHub</a>
+        </div>
+        <p data-i18n="footer.line1">Marca personal: TonyDev | Correo: anthonyparedes283839gm@gmail.com | GitHub: github.com/Tonyy-programmer</p>
+        <p data-i18n="footer.line2">&copy; 2026 Anthony Paredes. Desarrollado con HTML, CSS y JavaScript.</p>
+    </footer>
+
+    <script src="Interacciones.js"></script>
+</body>
+</html>
